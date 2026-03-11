@@ -91,7 +91,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto"
         >
-          <div className="bg-bg-dark rounded-3xl p-8 md:p-12 shadow-2xl border border-border-color relative">
+          <div className="bg-bg-dark rounded-3xl p-6 md:p-10 lg:p-12 shadow-2xl border border-border-color relative">
             
             {/* Form Glow */}
             <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/30 to-accent/30 rounded-3xl z-0 opacity-50 blur-sm pointer-events-none"></div>

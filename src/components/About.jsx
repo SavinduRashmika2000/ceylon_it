@@ -69,7 +69,7 @@ const About = () => {
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-800 to-bg-card p-1 shadow-2xl shadow-primary/5 hover:shadow-primary/20 transition-shadow duration-500">
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-blue-500 opacity-10"></div>
               
-              <div className="relative bg-bg-card rounded-3xl h-[400px] flex items-center justify-center overflow-hidden border border-border-color-hover/50">
+              <div className="relative bg-bg-card rounded-3xl min-h-[320px] md:min-h-[380px] lg:h-[400px] flex items-center justify-center overflow-hidden border border-border-color-hover/50">
                 {/* Abstract tech representation since no specific about image was provided */}
                 <div className="absolute inset-0 opacity-20">
                   <div className="absolute top-10 left-10 w-32 h-32 rounded-full border border-primary/20"></div>
@@ -80,11 +80,11 @@ const About = () => {
                   <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
                 </div>
 
-                <div className="relative z-10 text-center">
-                  <div className="w-28 h-28 mx-auto mb-6 bg-white rounded-2xl flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.1)] overflow-hidden p-1">
+                <div className="relative z-10 text-center p-6">
+                  <div className="w-24 h-24 md:w-28 md:h-28 mx-auto mb-4 md:mb-6 bg-white rounded-2xl flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.1)] overflow-hidden p-1">
                     <img src="https://i.postimg.cc/85WMrz6d/Whats-App-Image-2026-03-11-at-11-47-41.jpg" alt="Ceylon IT Logo" className="w-full h-full object-cover rounded-xl" />
                   </div>
-                  <h3 className="text-2xl font-bold tracking-widest text-text-main/90">INNOVATION</h3>
+                  <h3 className="text-xl md:text-2xl font-bold tracking-widest text-text-main/90">INNOVATION</h3>
                 </div>
               </div>
             </div>
@@ -93,11 +93,11 @@ const About = () => {
             <motion.div 
               animate={{ y: [0, -15, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute -bottom-6 -right-6 w-32 h-32 bg-surface rounded-2xl border border-border-color-hover shadow-xl flex items-center justify-center backdrop-blur-md bg-opacity-80 z-20"
+              className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-24 h-24 md:w-32 md:h-32 bg-surface rounded-2xl border border-border-color-hover shadow-xl flex items-center justify-center backdrop-blur-md bg-opacity-80 z-20"
             >
               <div className="text-center">
-                <div className="text-3xl mb-1">🚀</div>
-                <div className="text-xs font-bold text-text-muted">Modern Web</div>
+                <div className="text-2xl md:text-3xl mb-1">🚀</div>
+                <div className="text-[10px] md:text-xs font-bold text-text-muted">Modern Web</div>
               </div>
             </motion.div>
           </motion.div>

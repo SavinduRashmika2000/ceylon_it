@@ -100,7 +100,7 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
         >
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -109,26 +109,26 @@ const Services = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
-                className="group relative bg-bg-card border border-border-color rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-xl"
+                className="group relative bg-bg-card border border-border-color rounded-2xl p-6 md:p-8 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-xl"
               >
                 {/* Hover Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
                 
-                <div className={`w-14 h-14 rounded-xl mb-6 flex items-center justify-center bg-gradient-to-br ${service.color} bg-opacity-10 shadow-lg shadow-black/5`}>
-                  <Icon className="text-2xl text-white" />
+                <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl mb-4 md:mb-6 flex items-center justify-center bg-gradient-to-br ${service.color} bg-opacity-10 shadow-lg shadow-black/5`}>
+                  <Icon className="text-xl md:text-2xl text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold mb-3 text-text-main group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-text-main group-hover:text-primary transition-colors duration-300">
                   {service.title}
                 </h3>
                 
-                <p className="text-text-muted leading-relaxed">
+                <p className="text-sm md:text-base text-text-muted leading-relaxed">
                   {service.description}
                 </p>
                 
                 {/* Decorative corner accent */}
-                <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-tr-2xl pointer-events-none">
-                  <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-bl from-primary/10 to-transparent group-hover:from-primary/20 transition-colors duration-300 rounded-bl-full"></div>
+                <div className="absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 overflow-hidden rounded-tr-2xl pointer-events-none">
+                  <div className="absolute top-0 right-0 w-6 h-6 md:w-8 md:h-8 bg-gradient-to-bl from-primary/10 to-transparent group-hover:from-primary/20 transition-colors duration-300 rounded-bl-full"></div>
                 </div>
               </motion.div>
             );

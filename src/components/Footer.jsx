@@ -8,21 +8,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           
           {/* Brand Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 sm:text-left text-center flex flex-col items-center sm:items-start">
             <Link to="home" smooth={true} duration={500} className="inline-block cursor-pointer">
               <img 
                 src="https://i.postimg.cc/85WMrz6d/Whats-App-Image-2026-03-11-at-11-47-41.jpg" 
                 alt="Ceylon IT Solutions Logo" 
-                className="h-14 md:h-16 w-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+                className="h-12 md:h-14 lg:h-16 w-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
               />
             </Link>
-            <p className="text-text-muted text-sm leading-relaxed max-w-xs">
+            <p className="text-text-muted text-sm leading-relaxed max-w-xs mx-auto sm:mx-0">
               Building Modern Websites for Growing Businesses. Professional web development and digital solutions.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="sm:text-left text-center">
             <h4 className="text-text-main font-semibold mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
             <ul className="space-y-2">
               {['Home', 'Services', 'Projects', 'About', 'Contact'].map((item) => (
@@ -41,9 +41,9 @@ const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div>
+          <div className="sm:text-left text-center">
             <h4 className="text-text-main font-semibold mb-4 uppercase tracking-wider text-sm">Connect</h4>
-            <div className="flex space-x-4 -ml-2">
+            <div className="flex space-x-4 -ml-2 justify-center sm:justify-start">
               <a
                 href="https://youtube.com/@ceylonitsolution-x4o?si=FUMhWzbvPVLAjAVR"
                 target="_blank"
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="sm:text-left text-center">
             <h4 className="text-text-main font-semibold mb-4 uppercase tracking-wider text-sm">Contact Info</h4>
             <ul className="space-y-2 text-sm text-text-muted">
               <li>Email: ceylonitsolutionlk@gmail.com</li>

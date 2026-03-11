@@ -48,23 +48,23 @@ const Projects = () => {
           <div className="group relative bg-bg-dark rounded-3xl overflow-hidden border border-border-color-hover hover:border-primary/50 transition-all duration-500 shadow-2xl hover:shadow-primary/20">
             <div className="flex flex-col lg:flex-row">
               {/* Project Image/Preview Area */}
-              <div className="lg:w-3/5 relative overflow-hidden bg-surface-dark min-h-[300px] lg:min-h-[400px]">
+              <div className="lg:w-3/5 relative overflow-hidden bg-surface-dark min-h-[250px] md:min-h-[350px] lg:min-h-[400px]">
                 {/* Simulated Browser Bar */}
                 <div className="absolute top-0 w-full h-8 bg-surface-dark flex items-center px-4 space-x-2 z-10">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  <div className="ml-4 bg-border-color-hover h-4 rounded w-48 opacity-50"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                  <div className="ml-3 bg-border-color-hover h-3.5 rounded w-32 md:w-48 opacity-50"></div>
                 </div>
                 
-                {/* Project Image Mockup (Can replace src with actual screenshot later) */}
-                <div className="pt-8 h-full w-full bg-surface-dark flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-700">
+                {/* Project Image Mockup */}
+                <div className="pt-8 h-full w-full bg-surface-dark flex items-center justify-center p-6 md:p-8 group-hover:scale-105 transition-transform duration-700">
                   <div className="text-center">
-                    <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-tr from-primary to-accent rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(14,165,233,0.2)]">
-                       <span className="text-4xl font-bold text-white">B</span>
+                    <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-3 md:mb-4 bg-gradient-to-tr from-primary to-accent rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(14,165,233,0.2)]">
+                       <span className="text-3xl md:text-4xl font-bold text-white">B</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-text-main mb-2">Barco Peach</h3>
-                    <p className="text-text-muted-dark">Premium E-Commerce Experience</p>
+                    <h3 className="text-xl md:text-2xl font-bold text-text-main mb-1 md:mb-2">Barco Peach</h3>
+                    <p className="text-xs md:text-sm text-text-muted-dark">Premium E-Commerce Experience</p>
                   </div>
                 </div>
 
@@ -73,22 +73,22 @@ const Projects = () => {
               </div>
 
               {/* Project Info Area */}
-              <div className="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center relative bg-bg-card">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full pointer-events-none"></div>
+              <div className="lg:w-2/5 p-6 md:p-8 lg:p-12 flex flex-col justify-center relative bg-bg-card">
+                <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-primary/10 rounded-bl-full pointer-events-none"></div>
                 
-                <div className="mb-6">
-                  <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold tracking-wider mb-4 border border-primary/20">
+                <div className="mb-4 md:mb-6">
+                  <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-semibold tracking-wider mb-3 md:mb-4 border border-primary/20">
                     E-Commerce
                   </span>
-                  <h3 className="text-3xl font-bold text-text-main mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl md:text-3xl font-bold text-text-main mb-3 md:mb-4 group-hover:text-primary transition-colors">
                     Barco Peach
                   </h3>
-                  <p className="text-text-muted leading-relaxed">
+                  <p className="text-sm md:text-base text-text-muted leading-relaxed">
                     A modern, high-performance web application featuring a sleek dark UI, smooth animations, and an intuitive user experience tailored for a premium brand presentation.
                   </p>
                 </div>
 
-                <div className="space-y-4 font-mono text-sm text-text-muted-dark mb-8">
+                <div className="space-y-3 md:space-y-4 font-mono text-xs md:text-sm text-text-muted-dark mb-6 md:mb-8">
                   <div className="flex items-center">
                     <span className="text-primary mr-2">Client:</span> Barco Peach
                   </div>

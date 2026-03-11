@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-bg-dark/80 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'
+        scrolled ? 'bg-bg-dark/80 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-4 md:py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +39,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <img 
                 src="https://i.postimg.cc/85WMrz6d/Whats-App-Image-2026-03-11-at-11-47-41.jpg" 
                 alt="Ceylon IT Solutions" 
-                className="h-12 md:h-14 w-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" 
+                className="h-10 md:h-12 w-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" 
               />
             </Link>
           </div>
