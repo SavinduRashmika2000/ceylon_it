@@ -45,7 +45,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-3 md:mb-5 leading-[1.2]"
+          className="text-xl md:text-3xl lg:text-4xl font-extrabold tracking-tight mb-3 md:mb-5 leading-[1.2]"
         >
           Building Modern Websites <br className="hidden md:block" />
           <span className="bg-gradient-to-r from-primary via-accent to-blue-300 bg-clip-text text-transparent">
@@ -57,7 +57,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-1 md:mt-2 max-w-xl mx-auto text-sm md:text-base text-text-muted leading-relaxed px-4 opacity-90"
+          className="mt-1 md:mt-2 max-w-xl mx-auto text-xs md:text-sm text-text-muted leading-relaxed px-4 opacity-90"
         >
           Ceylon IT Solutions provides professional website development, modern web design, and digital solutions to help businesses grow online.
         </motion.p>
