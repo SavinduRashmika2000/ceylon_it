@@ -61,11 +61,11 @@ const itemVariants = {
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-surface relative overflow-hidden">
+    <section id="services" className="py-20 bg-surface relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full filter blur-[100px] -translate-y-1/2 translate-x-1/3"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -80,7 +80,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold"
+            className="text-3xl md:text-4xl font-bold"
           >
             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Services</span>
           </motion.h2>
@@ -89,7 +89,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-text-muted text-lg"
+            className="text-text-muted text-base md:text-lg"
           >
             We deliver comprehensive digital solutions tailored to elevate your brand and accelerate your business growth.
           </motion.p>

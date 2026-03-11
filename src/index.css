@@ -18,6 +18,17 @@
   --color-text-main: var(--text-main);
   --color-text-muted: var(--text-muted);
   --color-text-muted-dark: var(--text-muted-dark);
+
+  @keyframes shine {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  --animate-shine: shine 2s infinite ease-in-out;
 }
 
 @layer base {
@@ -84,4 +95,8 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted); 
+}
+
+.animate-shine {
+  animation: var(--animate-shine);
 }
