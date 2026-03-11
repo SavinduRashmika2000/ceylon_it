@@ -18,14 +18,19 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-12 md:pb-8 flex flex-col justify-center h-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-          animate={{ opacity: 1, scale: 1, rotate: 3 }}
-          transition={{ 
-            duration: 1, 
-            ease: "easeOut",
-            type: "spring",
-            stiffness: 100 
+          animate={{ 
+            opacity: 1, 
+            scale: 1, 
+            rotate: 3,
+            y: [0, -10, 0] // Continuous floating animation
           }}
-          className="mb-6 md:mb-10 flex justify-center"
+          transition={{ 
+            opacity: { duration: 1, ease: "easeOut" },
+            scale: { duration: 1, ease: "easeOut", type: "spring", stiffness: 100 },
+            rotate: { duration: 1, ease: "easeOut", type: "spring", stiffness: 100 },
+            y: { repeat: Infinity, duration: 4, ease: "easeInOut" } // Infinite transition
+          }}
+          className="mb-4 md:mb-8 flex justify-center"
         >
           <div className="w-36 h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 bg-white rounded-[2rem] p-3 shadow-2xl shadow-primary/30 overflow-hidden flex items-center justify-center transform rotate-3 hover:rotate-0 transition-all duration-500">
              <img 
@@ -40,7 +45,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 leading-[1.1]"
+          className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3 md:mb-5 leading-[1.1]"
         >
           Building Modern Websites <br className="hidden md:block" />
           <span className="bg-gradient-to-r from-primary via-accent to-blue-300 bg-clip-text text-transparent">
@@ -52,7 +57,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-2 md:mt-4 max-w-2xl mx-auto text-lg md:text-xl text-text-muted leading-relaxed px-4 opacity-95"
+          className="mt-1 md:mt-2 max-w-xl mx-auto text-base md:text-lg text-text-muted leading-relaxed px-4 opacity-90"
         >
           Ceylon IT Solutions provides professional website development, modern web design, and digital solutions to help businesses grow online.
         </motion.p>
@@ -61,13 +66,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-8 md:mt-12 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6"
+          className="mt-6 md:mt-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
         >
           <Link
             to="projects"
             smooth={true}
             duration={500}
-            className="group relative px-10 py-4.5 bg-gradient-to-r from-primary to-accent text-white font-black rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(14,165,233,0.3)] cursor-pointer text-center transition-all duration-300 hover:shadow-primary/60 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-lg uppercase tracking-widest"
+            className="group relative px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-black rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(14,165,233,0.3)] cursor-pointer text-center transition-all duration-300 hover:shadow-primary/60 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-base md:text-lg uppercase tracking-widest"
           >
             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine"></div>
@@ -77,9 +82,9 @@ const Hero = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="group px-10 py-4.5 bg-bg-dark/40 border-2 border-white/20 text-white font-black rounded-2xl hover:border-primary/60 transition-all duration-300 cursor-pointer text-center backdrop-blur-xl hover:bg-bg-dark/60 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-lg uppercase tracking-widest shadow-xl"
+            className="group px-8 py-4 bg-white text-black font-black rounded-2xl border-2 border-white/50 hover:bg-white/90 hover:border-primary/40 transition-all duration-300 cursor-pointer text-center shadow-xl hover:-translate-y-1 active:scale-95 flex items-center justify-center text-base md:text-lg uppercase tracking-widest"
           >
-            <span className="group-hover:text-primary transition-colors duration-300 drop-shadow-md">Start a Project</span>
+            <span className="relative z-10 transition-transform duration-300 group-hover:scale-105 inline-block">Start a Project</span>
           </Link>
         </motion.div>
       </div>
