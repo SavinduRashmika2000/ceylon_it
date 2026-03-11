@@ -25,13 +25,13 @@ const Hero = () => {
             type: "spring",
             stiffness: 100 
           }}
-          className="mb-4 md:mb-6 flex justify-center"
+          className="mb-6 md:mb-10 flex justify-center"
         >
-          <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-3xl p-2.5 shadow-2xl shadow-primary/20 overflow-hidden flex items-center justify-center transform rotate-3 hover:rotate-0 transition-all duration-300">
+          <div className="w-36 h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 bg-white rounded-[2rem] p-3 shadow-2xl shadow-primary/30 overflow-hidden flex items-center justify-center transform rotate-3 hover:rotate-0 transition-all duration-500">
              <img 
                src="https://i.postimg.cc/85WMrz6d/Whats-App-Image-2026-03-11-at-11-47-41.jpg" 
                alt="Ceylon IT Solutions Logo" 
-               className="w-full h-full object-cover rounded-2xl"
+               className="w-full h-full object-cover rounded-[1.5rem]"
              />
           </div>
         </motion.div>
@@ -40,7 +40,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3 md:mb-4"
+          className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 leading-[1.1]"
         >
           Building Modern Websites <br className="hidden md:block" />
           <span className="bg-gradient-to-r from-primary via-accent to-blue-300 bg-clip-text text-transparent">
@@ -52,7 +52,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-1 md:mt-2 max-w-xl mx-auto text-base md:text-lg text-text-muted leading-relaxed px-4 opacity-90"
+          className="mt-2 md:mt-4 max-w-2xl mx-auto text-lg md:text-xl text-text-muted leading-relaxed px-4 opacity-95"
         >
           Ceylon IT Solutions provides professional website development, modern web design, and digital solutions to help businesses grow online.
         </motion.p>
@@ -61,25 +61,25 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-6 md:mt-8 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
+          className="mt-8 md:mt-12 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6"
         >
           <Link
             to="projects"
             smooth={true}
             duration={500}
-            className="group relative px-7 py-3.5 bg-gradient-to-r from-primary to-accent text-text-main font-bold rounded-xl overflow-hidden shadow-lg shadow-primary/20 cursor-pointer text-center transition-all duration-300 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-95"
+            className="group relative px-10 py-4.5 bg-gradient-to-r from-primary to-accent text-white font-black rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(14,165,233,0.3)] cursor-pointer text-center transition-all duration-300 hover:shadow-primary/60 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-lg uppercase tracking-widest"
           >
             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/20 opacity-40 group-hover:animate-shine"></div>
-            <span className="relative z-10 transition-transform duration-300 group-hover:scale-105 inline-block">View Our Work</span>
+            <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine"></div>
+            <span className="relative z-10 transition-transform duration-300 group-hover:scale-105 inline-block drop-shadow-md">View Our Work</span>
           </Link>
           <Link
             to="contact"
             smooth={true}
             duration={500}
-            className="group px-7 py-3.5 bg-surface-dark/40 border border-white/10 text-white font-bold rounded-xl hover:border-primary/50 transition-all duration-300 cursor-pointer text-center backdrop-blur-md hover:bg-surface-dark/60 hover:-translate-y-0.5 active:scale-95"
+            className="group px-10 py-4.5 bg-bg-dark/40 border-2 border-white/20 text-white font-black rounded-2xl hover:border-primary/60 transition-all duration-300 cursor-pointer text-center backdrop-blur-xl hover:bg-bg-dark/60 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-lg uppercase tracking-widest shadow-xl"
           >
-            <span className="group-hover:text-primary transition-colors duration-300">Start a Project</span>
+            <span className="group-hover:text-primary transition-colors duration-300 drop-shadow-md">Start a Project</span>
           </Link>
         </motion.div>
       </div>
@@ -88,7 +88,7 @@ const Hero = () => {
       <motion.div 
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer text-text-muted hover:text-text-main transition-colors z-20"
+        className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer text-text-muted hover:text-text-main transition-colors z-20"
       >
         <span className="text-[10px] md:text-xs tracking-widest uppercase mb-1 md:mb-2 opacity-80">Scroll Down</span>
         <div className="w-5 h-8 md:w-6 md:h-10 border-2 border-current rounded-full flex justify-center p-1">
