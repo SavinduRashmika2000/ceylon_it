@@ -102,7 +102,7 @@ const Projects = () => {
                     href="https://barco-peach.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-primary hover:text-text-main transition-colors duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]"
+                    className="inline-flex items-center px-6 py-2.5 bg-transparent border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]"
                   >
                     View Project <FaExternalLinkAlt className="ml-2" size={14} />
                   </a>
