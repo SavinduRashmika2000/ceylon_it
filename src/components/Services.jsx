@@ -61,7 +61,7 @@ const itemVariants = {
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-bg-dark relative overflow-hidden">
+    <section id="services" className="py-24 bg-surface relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full filter blur-[100px] -translate-y-1/2 translate-x-1/3"></div>
       
@@ -71,7 +71,7 @@ const Services = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-accent font-semibold tracking-wider uppercase text-sm"
+            className="text-primary font-semibold tracking-wider uppercase text-sm"
           >
             What We Do
           </motion.p>
@@ -109,26 +109,26 @@ const Services = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
-                className="group relative bg-bg-card border border-border-color rounded-2xl p-8 hover:border-primary/50 transition-all duration-300"
+                className="group relative bg-bg-card border border-border-color rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-xl"
               >
                 {/* Hover Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
                 
-                <div className={`w-14 h-14 rounded-xl mb-6 flex items-center justify-center bg-gradient-to-br ${service.color} bg-opacity-10 shadow-lg shadow-black/20`}>
-                  <Icon className="text-2xl text-text-main" />
+                <div className={`w-14 h-14 rounded-xl mb-6 flex items-center justify-center bg-gradient-to-br ${service.color} bg-opacity-10 shadow-lg shadow-black/5`}>
+                  <Icon className="text-2xl text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold mb-3 text-text-main group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-slate-300 transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-3 text-text-main group-hover:text-primary transition-colors duration-300">
                   {service.title}
                 </h3>
                 
-                <p className="text-text-muted-dark group-hover:text-text-muted transition-colors duration-300 leading-relaxed">
+                <p className="text-text-muted leading-relaxed">
                   {service.description}
                 </p>
                 
                 {/* Decorative corner accent */}
                 <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-tr-2xl pointer-events-none">
-                  <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-bl from-primary/20 to-transparent group-hover:from-primary/40 transition-colors duration-300 rounded-bl-full"></div>
+                  <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-bl from-primary/10 to-transparent group-hover:from-primary/20 transition-colors duration-300 rounded-bl-full"></div>
                 </div>
               </motion.div>
             );
