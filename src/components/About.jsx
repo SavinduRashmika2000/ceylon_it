@@ -59,20 +59,21 @@ const About = () => {
 
           {/* Visual/Image Area */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1 }}
+            whileHover={{ scale: 1.02 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-800 to-bg-card p-1 shadow-2xl shadow-primary/10">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-blue-500 opacity-20 animate-pulse"></div>
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-800 to-bg-card p-1 shadow-2xl shadow-primary/5 hover:shadow-primary/20 transition-shadow duration-500">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-blue-500 opacity-10"></div>
               
               <div className="relative bg-bg-card rounded-3xl h-[400px] flex items-center justify-center overflow-hidden border border-border-color-hover/50">
                 {/* Abstract tech representation since no specific about image was provided */}
-                <div className="absolute inset-0 opacity-30">
-                  <div className="absolute top-10 left-10 w-32 h-32 rounded-full border border-primary/30"></div>
-                  <div className="absolute top-20 left-20 w-48 h-48 rounded-full border border-accent/30 animate-spin-slow"></div>
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute top-10 left-10 w-32 h-32 rounded-full border border-primary/20"></div>
+                  <div className="absolute top-20 left-20 w-48 h-48 rounded-full border border-accent/20"></div>
                   <div className="absolute bottom-10 right-10 w-40 h-40 rounded-full border border-blue-400/30"></div>
                   
                   {/* Grid overlay */}
@@ -92,7 +93,7 @@ const About = () => {
             <motion.div 
               animate={{ y: [0, -15, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute -bottom-6 -right-6 w-32 h-32 bg-surface rounded-2xl border border-border-color-hover shadow-xl flex items-center justify-center backdrop-blur-md bg-opacity-80"
+              className="absolute -bottom-6 -right-6 w-32 h-32 bg-surface rounded-2xl border border-border-color-hover shadow-xl flex items-center justify-center backdrop-blur-md bg-opacity-80 z-20"
             >
               <div className="text-center">
                 <div className="text-3xl mb-1">🚀</div>
