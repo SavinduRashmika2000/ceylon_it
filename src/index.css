@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-card: var(--bg-card);
+  --color-surface: var(--surface);
+  --color-surface-dark: var(--surface-dark);
+  --color-border-color: var(--border-color);
+  --color-border-color-hover: var(--border-color-hover);
+  
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-muted-dark: var(--text-muted-dark);
+}
+
+@layer base {
+  :root {
+    /* Light Mode Variables (Default) */
+    --primary: #0ea5e9;
+    --primary-dark: #0284c7;
+    --secondary: #e2e8f0;
+    --accent: #38bdf8;
+    
+    --bg-dark: #f8fafc; /* Very light background replacing bg-black/bg-bg-dark */
+    --bg-card: #ffffff; /* White card */
+    --surface: #f1f5f9; /* Slate 100 replacing slate-800 inverted */
+    --surface-dark: #e2e8f0; /* Slate 200 replacing slate-900 inverted */
+    --border-color: #cbd5e1; /* Slate 300 replacing slate-800 border */
+    --border-color-hover: #94a3b8; /* Slate 400 replacing slate-700 border */
+    
+    --text-main: #0f172a; /* Slate 900 replacing white text */
+    --text-muted: #475569; /* Slate 600 replacing slate-300 text */
+    --text-muted-dark: #334155; /* Slate 700 replacing slate-400 text */
+  }
+
+  .dark {
+    /* Dark Mode Variables */
+    --primary: #0ea5e9;
+    --primary-dark: #0284c7;
+    --secondary: #0f172a;
+    --accent: #38bdf8;
+    
+    --bg-dark: #020617; /* Original dark bg */
+    --bg-card: #0f172a; /* Original dark card */
+    --surface: #1e293b; /* Slate 800 */
+    --surface-dark: #0f172a; /* Slate 900 */
+    --border-color: #1e293b; /* Slate 800 */
+    --border-color-hover: #334155; /* Slate 700 */
+    
+    --text-main: #f8fafc; /* Slate 50 or White */
+    --text-muted: #cbd5e1; /* Slate 300 */
+    --text-muted-dark: #94a3b8; /* Slate 400 */
+  }
+
+  body {
+    @apply bg-bg-dark text-text-main font-sans antialiased overflow-x-hidden transition-colors duration-300;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--surface-dark); 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted); 
+}
