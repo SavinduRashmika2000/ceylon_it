@@ -45,7 +45,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-3 md:mb-5 leading-[1.2]"
+          className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 md:mb-6 leading-[1.1]"
         >
           Building Modern Websites <br className="hidden md:block" />
           <span className="bg-gradient-to-r from-primary via-accent to-blue-300 bg-clip-text text-transparent">
@@ -57,7 +57,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-1 md:mt-2 max-w-xl mx-auto text-xs md:text-sm text-text-muted leading-relaxed px-4 opacity-90"
+          className="mt-2 md:mt-3 max-w-2xl mx-auto text-base md:text-lg text-text-muted leading-relaxed px-4 opacity-95"
         >
           Ceylon IT Solutions provides professional website development, modern web design, and digital solutions to help businesses grow online.
         </motion.p>
@@ -72,7 +72,7 @@ const Hero = () => {
             to="projects"
             smooth={true}
             duration={500}
-            className="group relative px-7 py-3.5 bg-gradient-to-r from-primary to-accent text-white font-black rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(14,165,233,0.3)] cursor-pointer text-center transition-all duration-300 hover:shadow-primary/60 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-sm md:text-base uppercase tracking-widest"
+            className="group relative px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-black rounded-xl overflow-hidden shadow-[0_0_20px_rgba(14,165,233,0.2)] cursor-pointer text-center transition-all duration-300 hover:shadow-primary/40 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-xs md:text-sm uppercase tracking-widest"
           >
             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine"></div>
@@ -82,7 +82,7 @@ const Hero = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="group px-7 py-3.5 bg-white text-black font-black rounded-2xl border-2 border-white/50 hover:bg-white/90 hover:border-primary/40 transition-all duration-300 cursor-pointer text-center shadow-xl hover:-translate-y-1 active:scale-95 flex items-center justify-center text-sm md:text-base uppercase tracking-widest"
+            className="group px-6 py-3 bg-white text-black font-black rounded-xl border border-white/50 hover:bg-white/90 hover:border-primary/40 transition-all duration-300 cursor-pointer text-center shadow-lg hover:-translate-y-1 active:scale-95 flex items-center justify-center text-xs md:text-sm uppercase tracking-widest"
           >
             <span className="relative z-10 transition-transform duration-300 group-hover:scale-105 inline-block">Start a Project</span>
           </Link>
