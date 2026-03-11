@@ -66,23 +66,23 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-6 md:mt-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
+          className="mt-5 md:mt-8 flex flex-col sm:flex-row justify-center gap-2 sm:gap-3"
         >
           <Link
             to="projects"
             smooth={true}
             duration={500}
-            className="group relative px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-black rounded-xl overflow-hidden shadow-[0_0_20px_rgba(14,165,233,0.2)] cursor-pointer text-center transition-all duration-300 hover:shadow-primary/40 hover:-translate-y-1 active:scale-95 flex items-center justify-center text-xs md:text-sm uppercase tracking-widest"
+            className="group relative px-4 py-2 bg-gradient-to-r from-primary to-accent text-white font-black rounded-lg overflow-hidden shadow-md cursor-pointer text-center transition-all duration-300 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-95 flex items-center justify-center text-[10px] md:text-xs uppercase tracking-widest"
           >
             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/30 opacity-40 group-hover:animate-shine"></div>
-            <span className="relative z-10 transition-transform duration-300 group-hover:scale-105 inline-block drop-shadow-md">View Our Work</span>
+            <span className="relative z-10 transition-transform duration-300 group-hover:scale-105 inline-block drop-shadow-sm">View Our Work</span>
           </Link>
           <Link
             to="contact"
             smooth={true}
             duration={500}
-            className="group px-6 py-3 bg-white text-black font-black rounded-xl border border-white/50 hover:bg-white/90 hover:border-primary/40 transition-all duration-300 cursor-pointer text-center shadow-lg hover:-translate-y-1 active:scale-95 flex items-center justify-center text-xs md:text-sm uppercase tracking-widest"
+            className="group px-4 py-2 bg-white text-black font-black rounded-lg border border-white/50 hover:bg-white/90 hover:border-primary/40 transition-all duration-300 cursor-pointer text-center shadow-sm hover:-translate-y-0.5 active:scale-95 flex items-center justify-center text-[10px] md:text-xs uppercase tracking-widest"
           >
             <span className="relative z-10 transition-transform duration-300 group-hover:scale-105 inline-block">Start a Project</span>
           </Link>
