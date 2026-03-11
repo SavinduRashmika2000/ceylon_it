@@ -17,7 +17,14 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-20 md:pb-12 flex flex-col justify-center h-full">
         <motion.div
-// ... (omitting transition for brevity)
+          initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
+          animate={{ opacity: 1, scale: 1, rotate: 3 }}
+          transition={{ 
+            duration: 1, 
+            ease: "easeOut",
+            type: "spring",
+            stiffness: 100 
+          }}
           className="mb-6 md:mb-8 flex justify-center"
         >
           <div className="w-32 h-32 md:w-44 md:h-44 bg-white rounded-3xl p-3 shadow-2xl shadow-primary/20 overflow-hidden flex items-center justify-center transform rotate-3 hover:rotate-0 transition-all duration-300">
@@ -56,7 +63,22 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-8 md:mt-10 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6"
         >
-// ... (omitting buttons for brevity)
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="px-8 py-4 bg-white text-bg-dark font-bold rounded-xl hover:bg-primary hover:text-text-main transition-all duration-300 shadow-xl hover:shadow-primary/40 cursor-pointer text-center"
+          >
+            View Our Work
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="px-8 py-4 bg-transparent border-2 border-slate-700 text-text-main font-bold rounded-xl hover:border-primary transition-all duration-300 cursor-pointer text-center backdrop-blur-sm"
+          >
+            Start a Project
+          </Link>
         </motion.div>
       </div>
 
