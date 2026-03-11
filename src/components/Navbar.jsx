@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-bg-dark/80 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-4 md:py-5'
+        scrolled ? 'bg-bg-dark/80 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-3 md:py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

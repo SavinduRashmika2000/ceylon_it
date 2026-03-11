@@ -3,12 +3,12 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 bg-bg-card relative overflow-hidden">
+    <section id="projects" className="py-20 bg-bg-card relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
       <div className="absolute top-1/4 left-10 w-72 h-72 bg-accent/5 rounded-full filter blur-[80px]"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold"
+            className="text-3xl md:text-4xl font-bold"
           >
             Recent <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">Projects</span>
           </motion.h2>
@@ -32,7 +32,7 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-text-muted text-lg"
+            className="text-text-muted text-base md:text-lg"
           >
             Explore our latest successful deliveries that combine stunning design with robust functionality.
           </motion.p>

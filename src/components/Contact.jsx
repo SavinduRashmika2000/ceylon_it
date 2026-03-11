@@ -49,12 +49,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-bg-card relative overflow-hidden">
+    <section id="contact" className="py-20 bg-bg-card relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full filter blur-[100px] pointer-events-none"></div>
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-accent/10 rounded-full filter blur-[100px] pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -69,7 +69,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold"
+            className="text-3xl md:text-4xl font-bold"
           >
             Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Project</span>
           </motion.h2>
@@ -78,7 +78,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-text-muted text-lg"
+            className="text-text-muted text-base md:text-lg"
           >
             Ready to transform your digital presence? Send us a message and let's build something exceptional together.
           </motion.p>
