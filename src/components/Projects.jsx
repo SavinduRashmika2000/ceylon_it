@@ -85,21 +85,24 @@ const Projects = () => {
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                      <div className="ml-3 bg-border-color-hover h-3.5 rounded w-32 md:w-48 opacity-50"></div>
+                      <div className="ml-3 bg-border-color-hover/60 h-5 rounded-md flex-1 max-w-[240px] flex items-center px-2">
+                        <span className="text-[9px] text-text-muted truncate opacity-70">{project.url}</span>
+                      </div>
                     </div>
                     
-                    {/* Project Image Mockup */}
-                    <div className="pt-8 h-full w-full bg-surface-dark flex items-center justify-center p-6 md:p-8 group-hover:scale-105 transition-transform duration-700">
-                      <div className="text-center">
-                        <div className={`w-20 h-20 md:w-24 md:h-24 mx-auto mb-3 md:mb-4 bg-gradient-to-tr ${project.logoColor} rounded-xl flex items-center justify-center ${project.logoShadow}`}>
-                        </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-text-main mb-1 md:mb-2">{project.title}</h3>
-                        <p className="text-xs md:text-sm text-text-muted-dark">{project.type}</p>
-                      </div>
+                    {/* Live Website Iframe */}
+                    <div className="absolute inset-0 pt-8 group-hover:scale-105 transition-transform duration-700 origin-top">
+                      <iframe
+                        src={project.url}
+                        title={`${project.title} preview`}
+                        className="w-full h-full border-0"
+                        style={{ pointerEvents: 'none' }}
+                        loading="lazy"
+                      />
                     </div>
 
                     {/* Overlay on hover */}
-                    <div className={`absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`}></div>
+                    <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                   </div>
 
                   {/* Project Info Area */}
