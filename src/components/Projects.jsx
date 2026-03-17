@@ -92,7 +92,6 @@ const Projects = () => {
                     <div className="pt-8 h-full w-full bg-surface-dark flex items-center justify-center p-6 md:p-8 group-hover:scale-105 transition-transform duration-700">
                       <div className="text-center">
                         <div className={`w-20 h-20 md:w-24 md:h-24 mx-auto mb-3 md:mb-4 bg-gradient-to-tr ${project.logoColor} rounded-xl flex items-center justify-center ${project.logoShadow}`}>
-                          <span className="text-3xl md:text-4xl font-bold text-white">{project.logoText}</span>
                         </div>
                         <h3 className="text-xl md:text-2xl font-bold text-text-main mb-1 md:mb-2">{project.title}</h3>
                         <p className="text-xs md:text-sm text-text-muted-dark">{project.type}</p>
