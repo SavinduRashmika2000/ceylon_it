@@ -49,6 +49,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-main hover:bg-[#FF0000] hover:text-white transition-all duration-300"
+                aria-label="Ceylon IT Solutions on YouTube"
               >
                 <FaYoutube size={20} />
               </a>
@@ -57,11 +58,15 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-main hover:bg-[#25D366] hover:text-white transition-all duration-300"
+                aria-label="Contact us on WhatsApp"
               >
                 <FaWhatsapp size={20} />
               </a>
               <div 
                 className="relative group w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-muted cursor-not-allowed"
+                aria-label="LinkedIn (Coming Soon)"
+                role="button"
+                tabIndex="0"
               >
                 <FaLinkedin size={20} />
                 <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-bg-dark text-xs text-text-main px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 shadow-lg border border-border-color">
@@ -73,6 +78,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-main hover:bg-[#1877F2] hover:text-white transition-all duration-300"
+                aria-label="Ceylon IT Solutions on Facebook"
               >
                 <FaFacebook size={20} />
               </a>

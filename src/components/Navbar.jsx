@@ -86,6 +86,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-text-main hover:text-accent focus:outline-none p-2 rounded-full hover:bg-white/5"
+            aria-label="Toggle Menu"
           >
             {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
           </button>
