@@ -40,12 +40,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div className="flex-shrink-0 cursor-pointer py-1">
           <Link to="home" smooth={true} duration={500}>
             <img 
-              src="https://i.postimg.cc/BQbMxv21/Chat-GPT-Image-Mar-23-2026-09-02-16-AM.png" 
-              alt="SADIGEN TECH" 
-              className={`transition-all duration-300 rounded-xl shadow-lg hover:scale-105 ${
-                scrolled ? 'h-8 md:h-10' : 'h-10 md:h-12'
-              }`} 
-            />
+            src="https://i.postimg.cc/ydN9ts0k/Whats-App-Image-2026-03-23-at-13-11-29.jpg" 
+            alt="SADIGEN TECH" 
+            className="h-10 md:h-12 w-auto rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105" 
+          />
           </Link>
         </div>
         

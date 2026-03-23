@@ -82,7 +82,7 @@ const About = () => {
 
                 <div className="relative z-10 text-center p-6">
                   <div className="w-24 h-24 md:w-28 md:h-28 mx-auto mb-4 md:mb-6 bg-white rounded-2xl flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.1)] overflow-hidden p-1">
-                    <img src="https://i.postimg.cc/BQbMxv21/Chat-GPT-Image-Mar-23-2026-09-02-16-AM.png" alt="SADIGEN TECH Logo" className="w-full h-full object-cover rounded-xl" />
+                    <img src="https://i.postimg.cc/ydN9ts0k/Whats-App-Image-2026-03-23-at-13-11-29.jpg" alt="SADIGEN TECH Logo" className="w-full h-full object-cover rounded-xl" />
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold tracking-widest text-text-main/90">INNOVATION</h3>
                 </div>

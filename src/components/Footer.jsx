@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4 sm:text-left text-center flex flex-col items-center sm:items-start">
             <Link to="home" smooth={true} duration={500} className="inline-block cursor-pointer">
               <img 
-                src="https://i.postimg.cc/BQbMxv21/Chat-GPT-Image-Mar-23-2026-09-02-16-AM.png" 
+                src="https://i.postimg.cc/ydN9ts0k/Whats-App-Image-2026-03-23-at-13-11-29.jpg" 
                 alt="SADIGEN TECH Logo" 
                 className="h-12 md:h-14 lg:h-16 w-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
               />
