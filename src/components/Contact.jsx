@@ -15,7 +15,7 @@ const Contact = () => {
 
     // EmailJS config from user requirements
     const serviceId = 'service_4mx9dd8';
-    const templateId = 'YOUR_TEMPLATE_ID'; // Update this with your actual template ID
+    const templateId = 'template_3lznvry';
     const publicKey = '5btSdpGwYEeUy0Zkf';
 
     // Send the message using EmailJS
