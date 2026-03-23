@@ -34,10 +34,10 @@ const Hero = () => {
         >
           <div className="w-36 h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 bg-white rounded-[2rem] p-3 shadow-2xl shadow-primary/30 overflow-hidden flex items-center justify-center transform rotate-3 hover:rotate-0 transition-all duration-500">
              <img 
-            src="https://i.postimg.cc/ydN9ts0k/Whats-App-Image-2026-03-23-at-13-11-29.jpg" 
-            alt="SADIGEN TECH Logo" 
-            className="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-3xl shadow-2xl mb-8 border-2 border-primary/20 p-2 bg-white/5 backdrop-blur-sm"
-          />
+               src="https://i.postimg.cc/ydN9ts0k/Whats-App-Image-2026-03-23-at-13-11-29.jpg" 
+               alt="SADIGEN TECH Logo" 
+               className="w-full h-full object-cover rounded-[1.5rem]"
+             />
           </div>
         </motion.div>
 
