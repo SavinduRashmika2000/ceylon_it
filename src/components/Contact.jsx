@@ -34,9 +34,12 @@ const Contact = () => {
         setSubmitStatus('success');
         formRef.current.reset();
         
+        // Foolproof backup alert
+        window.alert('✅ Message sent successfully! We will get back to you soon.');
+        
         setTimeout(() => {
           setSubmitStatus(null);
-        }, 5000);
+        }, 8000); // Keep it longer
       })
       .catch((error) => {
         console.error('Submission failed:', error);
@@ -96,14 +99,22 @@ const Contact = () => {
             <form ref={formRef} onSubmit={handleSubmit} className="relative z-10 space-y-6">
               
               {submitStatus === 'success' && (
-                <motion.div 
-                  initial={{ opacity: 0, height: 0 }} 
-                  animate={{ opacity: 1, height: 'auto' }} 
-                  className="bg-green-500/10 border border-green-500/50 text-green-400 p-4 rounded-xl flex items-center space-x-3"
-                >
-                  <FiCheckCircle size={24} />
-                  <p>Message sent successfully! We will get back to you soon.</p>
-                </motion.div>
+                <div className="fixed top-24 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-md">
+                  <motion.div 
+                    initial={{ opacity: 0, y: -50, scale: 0.9 }} 
+                    animate={{ opacity: 1, y: 0, scale: 1 }} 
+                    className="bg-green-500 text-white p-4 rounded-2xl shadow-[0_0_50px_rgba(34,197,94,0.4)] flex items-center space-x-3 border-2 border-green-400"
+                  >
+                    <FiCheckCircle size={28} className="flex-shrink-0" />
+                    <div className="flex-1">
+                      <p className="font-bold text-lg">Success!</p>
+                      <p className="text-sm opacity-90">Your message has been sent. We'll be in touch shortly.</p>
+                    </div>
+                    <button onClick={() => setSubmitStatus(null)} className="p-1 hover:bg-white/20 rounded-lg transition-colors">
+                      <FiXCircle size={24} />
+                    </button>
+                  </motion.div>
+                </div>
               )}
 
               {submitStatus === 'error' && (
