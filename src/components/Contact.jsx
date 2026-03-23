@@ -34,9 +34,6 @@ const Contact = () => {
         setSubmitStatus('success');
         formRef.current.reset();
         
-        // Foolproof backup alert
-        window.alert('✅ Message sent successfully! We will get back to you soon.');
-        
         setTimeout(() => {
           setSubmitStatus(null);
         }, 8000); // Keep it longer
