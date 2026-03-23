@@ -14,32 +14,20 @@ const Contact = () => {
     setSubmitStatus(null);
 
     // EmailJS config from user requirements
-    const serviceId = 'service_16w54xd';
-    const contactTemplateId = 'template_axbbpoj';
-    const autoReplyTemplateId = 'template_8do0nbo';
-    const publicKey = 'JVfN4hqgyNR3GfJDb';
+    const serviceId = 'service_4mx9dd8';
+    const templateId = 'YOUR_TEMPLATE_ID'; // Update this with your actual template ID
+    const publicKey = '5btSdpGwYEeUy0Zkf';
 
-    // 1. Send the primary message to business email
-    emailjs.sendForm(serviceId, contactTemplateId, formRef.current, publicKey)
+    // Send the message using EmailJS
+    emailjs.sendForm(serviceId, templateId, formRef.current, publicKey)
       .then(() => {
-        // 2. Send the auto-reply to the user
-        emailjs.sendForm(serviceId, autoReplyTemplateId, formRef.current, publicKey)
-          .then(() => {
-            setIsSubmitting(false);
-            setSubmitStatus('success');
-            formRef.current.reset();
-            
-            setTimeout(() => {
-              setSubmitStatus(null);
-            }, 5000);
-          })
-          .catch((error) => {
-            console.error('Auto-reply failed:', error);
-            // Even if auto-reply fails, primary message succeeded, so we show success
-            setIsSubmitting(false);
-            setSubmitStatus('success');
-            formRef.current.reset();
-          });
+        setIsSubmitting(false);
+        setSubmitStatus('success');
+        formRef.current.reset();
+        
+        setTimeout(() => {
+          setSubmitStatus(null);
+        }, 5000);
       })
       .catch((error) => {
         console.error('Submission failed:', error);
