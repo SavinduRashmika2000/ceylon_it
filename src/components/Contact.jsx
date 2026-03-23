@@ -24,7 +24,7 @@ const Contact = () => {
     
     // We can use a hidden input or just append it to the form data if using sendForm
     // But since we are using sendForm, we'll ensure the hidden input in the JSX is updated
-    const timeInput = formRef.current.querySelector('input[name="message_time"]');
+    const timeInput = formRef.current.querySelector('input[name="time"]');
     if (timeInput) timeInput.value = timestamp;
 
     // Send the message using EmailJS
@@ -118,13 +118,13 @@ const Contact = () => {
               )}
 
               <div>
-                <label htmlFor="user_name" className="block text-sm font-medium text-text-muted mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-text-muted mb-2">
                   Full Name
                 </label>
                 <input
                   type="text"
-                  name="user_name"
-                  id="user_name"
+                  name="name"
+                  id="name"
                   required
                   className="w-full px-5 py-4 bg-surface-dark/50 border border-border-color-hover rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-text-main placeholder-slate-500 transition-all duration-300"
                   placeholder="John Doe"
@@ -132,13 +132,13 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="user_email" className="block text-sm font-medium text-text-muted mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-text-muted mb-2">
                   Email Address
                 </label>
                 <input
                   type="email"
-                  name="user_email"
-                  id="user_email"
+                  name="email"
+                  id="email"
                   required
                   className="w-full px-5 py-4 bg-surface-dark/50 border border-border-color-hover rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-text-main placeholder-slate-500 transition-all duration-300"
                   placeholder="john@example.com"
@@ -160,7 +160,7 @@ const Contact = () => {
               </div>
 
               {/* Hidden timestamp field */}
-              <input type="hidden" name="message_time" />
+              <input type="hidden" name="time" />
 
               <button
                 type="submit"
