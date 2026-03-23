@@ -9,7 +9,6 @@ const projectsData = [
     client: 'Repairing Hut',
     tech: 'React, Tailwind CSS, Vite',
     url: 'https://repairing-hut.vercel.app/',
-    logoText: 'R',
     logoColor: 'from-emerald-400 to-teal-500',
     logoShadow: 'shadow-[0_0_30px_rgba(52,211,153,0.2)]',
     buttonStyles: 'border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:shadow-[0_0_20px_rgba(52,211,153,0.4)]',
@@ -22,7 +21,6 @@ const projectsData = [
     client: 'Barco Peach',
     tech: 'React, Tailwind CSS, Framer Motion',
     url: 'https://barco-peach.vercel.app/',
-    logoText: 'B',
     logoColor: 'from-primary to-accent',
     logoShadow: 'shadow-[0_0_30px_rgba(14,165,233,0.2)]',
     buttonStyles: 'border-primary text-primary hover:bg-primary hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]',
@@ -90,15 +88,15 @@ const Projects = () => {
                       </div>
                     </div>
                     
-                    {/* Live Website Iframe */}
-                    <div className="absolute inset-0 pt-8 group-hover:scale-105 transition-transform duration-700 origin-top">
-                      <iframe
-                        src={project.url}
-                        title={`${project.title} preview`}
-                        className="w-full h-full border-0"
-                        style={{ pointerEvents: 'none' }}
-                        loading="lazy"
-                      />
+                    {/* Stylized Project Name Text */}
+                    <div className="absolute inset-0 pt-8 flex items-center justify-center bg-gradient-to-br from-bg-dark to-surface-dark group-hover:scale-105 transition-transform duration-700">
+                      <motion.div
+                        initial={{ opacity: 0.8 }}
+                        whileHover={{ opacity: 1, scale: 1.1 }}
+                        className={`text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r ${project.logoColor} opacity-20 group-hover:opacity-40 transition-all duration-500`}
+                      >
+                        {project.title}
+                      </motion.div>
                     </div>
 
                     {/* Overlay on hover */}

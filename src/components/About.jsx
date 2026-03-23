@@ -23,13 +23,13 @@ const About = () => {
                 Who We Are
               </span>
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Ceylon IT Solutions</span>
+                About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">SADIGEN TECH</span>
               </h2>
             </div>
             
             <div className="space-y-6 text-lg text-text-muted leading-relaxed">
               <p>
-                Ceylon IT Solutions is a modern web development company focused on creating professional, responsive, and high-performance websites for businesses.
+                SADIGEN TECH is a modern web development company focused on creating professional, responsive, and high-performance websites for businesses.
               </p>
               <p>
                 Our goal is to help companies establish a strong online presence through clean design and reliable technology. We believe in blending stunning aesthetics with robust engineering to deliver digital experiences that not only look incredible but perform flawlessly across all devices.
@@ -82,7 +82,7 @@ const About = () => {
 
                 <div className="relative z-10 text-center p-6">
                   <div className="w-24 h-24 md:w-28 md:h-28 mx-auto mb-4 md:mb-6 bg-white rounded-2xl flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.1)] overflow-hidden p-1">
-                    <img src="https://i.postimg.cc/85WMrz6d/Whats-App-Image-2026-03-11-at-11-47-41.jpg" alt="Ceylon IT Logo" className="w-full h-full object-cover rounded-xl" />
+                    <img src="https://i.postimg.cc/BQbMxv21/Chat-GPT-Image-Mar-23-2026-09-02-16-AM.png" alt="SADIGEN TECH Logo" className="w-full h-full object-cover rounded-xl" />
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold tracking-widest text-text-main/90">INNOVATION</h3>
                 </div>

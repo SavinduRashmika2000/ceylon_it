@@ -34,8 +34,8 @@ const Hero = () => {
         >
           <div className="w-36 h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 bg-white rounded-[2rem] p-3 shadow-2xl shadow-primary/30 overflow-hidden flex items-center justify-center transform rotate-3 hover:rotate-0 transition-all duration-500">
              <img 
-               src="https://i.postimg.cc/85WMrz6d/Whats-App-Image-2026-03-11-at-11-47-41.jpg" 
-               alt="Ceylon IT Solutions Logo" 
+               src="https://i.postimg.cc/BQbMxv21/Chat-GPT-Image-Mar-23-2026-09-02-16-AM.png" 
+               alt="SADIGEN TECH Logo" 
                className="w-full h-full object-cover rounded-[1.5rem]"
              />
           </div>
@@ -59,7 +59,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-2 md:mt-3 max-w-2xl mx-auto text-base md:text-lg text-text-muted leading-relaxed px-4 opacity-95"
         >
-          Ceylon IT Solutions provides professional website development, modern web design, and digital solutions to help businesses grow online.
+          SADIGEN TECH provides professional website development, modern web design, and digital solutions to help businesses grow online.
         </motion.p>
 
         <motion.div 

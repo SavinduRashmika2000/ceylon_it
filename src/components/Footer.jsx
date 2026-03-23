@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaYoutube, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaWhatsapp, FaYoutube, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Footer = () => {
@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="space-y-4 sm:text-left text-center flex flex-col items-center sm:items-start">
             <Link to="home" smooth={true} duration={500} className="inline-block cursor-pointer">
               <img 
-                src="https://i.postimg.cc/85WMrz6d/Whats-App-Image-2026-03-11-at-11-47-41.jpg" 
-                alt="Ceylon IT Solutions Logo" 
+                src="https://i.postimg.cc/BQbMxv21/Chat-GPT-Image-Mar-23-2026-09-02-16-AM.png" 
+                alt="SADIGEN TECH Logo" 
                 className="h-12 md:h-14 lg:h-16 w-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
               />
             </Link>
@@ -45,11 +45,11 @@ const Footer = () => {
             <h4 className="text-text-main font-semibold mb-4 uppercase tracking-wider text-sm">Connect</h4>
             <div className="flex space-x-4 -ml-2 justify-center sm:justify-start">
               <a
-                href="https://youtube.com/@ceylonitsolution-x4o?si=FUMhWzbvPVLAjAVR"
+                href="https://youtube.com/@sadigen_tech?si=oKMckWaSgAvKHTsa"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-main hover:bg-[#FF0000] hover:text-white transition-all duration-300"
-                aria-label="Ceylon IT Solutions on YouTube"
+                aria-label="SADIGEN TECH on YouTube"
               >
                 <FaYoutube size={20} />
               </a>
@@ -62,23 +62,30 @@ const Footer = () => {
               >
                 <FaWhatsapp size={20} />
               </a>
-              <div 
-                className="relative group w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-muted cursor-not-allowed"
-                aria-label="LinkedIn (Coming Soon)"
-                role="button"
-                tabIndex="0"
+              <a
+                href="https://www.instagram.com/sadigentech?igsh=MWE3bGR4eHFldDJzNA%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-main hover:bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:text-white transition-all duration-300"
+                aria-label="SADIGEN TECH on Instagram"
+              >
+                <FaInstagram size={20} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/sadigen-tech/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-main hover:bg-[#0077B5] hover:text-white transition-all duration-300"
+                aria-label="SADIGEN TECH on LinkedIn"
               >
                 <FaLinkedin size={20} />
-                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-bg-dark text-xs text-text-main px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 shadow-lg border border-border-color">
-                  Coming Soon
-                </span>
-              </div>
+              </a>
               <a
-                href="https://www.facebook.com/share/1TLA8MJGBa/?mibextid=wwXIfr"
+                href="https://www.facebook.com/SadigenTECH/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-text-main hover:bg-[#1877F2] hover:text-white transition-all duration-300"
-                aria-label="Ceylon IT Solutions on Facebook"
+                aria-label="SADIGEN TECH on Facebook"
               >
                 <FaFacebook size={20} />
               </a>
@@ -89,7 +96,7 @@ const Footer = () => {
           <div className="sm:text-left text-center">
             <h4 className="text-text-main font-semibold mb-4 uppercase tracking-wider text-sm">Contact Info</h4>
             <ul className="space-y-2 text-sm text-text-muted">
-              <li>Email: ceylonitsolutionlk@gmail.com</li>
+              <li>Email: sadigentech@gmail.com</li>
               <li>Phone: +94 72 481 6258</li>
               <li>Sri Lanka</li>
             </ul>
@@ -97,7 +104,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border-color mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-text-muted">
-          <p>&copy; 2026 Ceylon IT Solutions. All rights reserved.</p>
+          <p>&copy; 2026 SADIGEN TECH. All rights reserved.</p>
           <div className="mt-4 md:mt-0 space-x-4">
             <span className="hover:text-text-main cursor-pointer transition-colors">Privacy Policy</span>
             <span className="hover:text-text-main cursor-pointer transition-colors">Terms of Service</span>
