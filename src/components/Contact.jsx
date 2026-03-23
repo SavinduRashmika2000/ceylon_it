@@ -18,6 +18,15 @@ const Contact = () => {
     const templateId = 'template_3lznvry';
     const publicKey = '5btSdpGwYEeUy0Zkf';
 
+    // Add timestamp to a hidden field in the form
+    const now = new Date();
+    const timestamp = now.toLocaleString();
+    
+    // We can use a hidden input or just append it to the form data if using sendForm
+    // But since we are using sendForm, we'll ensure the hidden input in the JSX is updated
+    const timeInput = formRef.current.querySelector('input[name="message_time"]');
+    if (timeInput) timeInput.value = timestamp;
+
     // Send the message using EmailJS
     emailjs.sendForm(serviceId, templateId, formRef.current, publicKey)
       .then(() => {
@@ -149,6 +158,9 @@ const Contact = () => {
                   placeholder="Tell us about your project, goals, and timeline..."
                 ></textarea>
               </div>
+
+              {/* Hidden timestamp field */}
+              <input type="hidden" name="message_time" />
 
               <button
                 type="submit"
