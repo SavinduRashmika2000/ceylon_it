@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sadigentech.com/sitemap.xml
+Sitemap: https://sadigentech.vercel.app/sitemap.xml
